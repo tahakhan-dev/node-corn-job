@@ -1,0 +1,5 @@
+// this is set to 10 minutes interval 
+// use reload command to change interval
+
+pm2 start backup_script.js --cron "*/10 * * * *"
+pm2 reload 22 --cron "*/10 * * * *"
